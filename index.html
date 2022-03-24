@@ -34,7 +34,7 @@
         function renderList(list) {
             let s = '';
             list.forEach(listItem => {
-                s += '<li data-set="' + listItem.key + '"><span>' + listItem.time + '</span> <span>' + listItem.title + '</span></li>'
+                s += '<li data-md="' + listItem.key + '"><span>' + listItem.time + '</span> <span>' + listItem.title + '</span></li>'
             })
             eleListBox.innerHTML = s;
         }
