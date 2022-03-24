@@ -8,7 +8,15 @@
     <style>
         #list li {
             display: flex;
-            justify-content: space-arround;
+            width: 700px;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        #list li span:nth-chid(1){
+            margin-right: 16px;
+        }
+        #list li:hover{
+            color: #e8e8e8;
         }
     </style>
      
@@ -26,11 +34,14 @@
         function renderList(list) {
             let s = '';
             list.forEach(listItem => {
-                s += '<li><span>' + listItem.time + '</span> <span>' + listItem.title + '</span></li>'
+                s += '<li data-set="' + listItem.key + '"><span>' + listItem.time + '</span> <span>' + listItem.title + '</span></li>'
             })
             eleListBox.innerHTML = s;
         }
         renderList(curList);
+        function onClick(event) {
+            
+        }
     </script>
 
 </body>
