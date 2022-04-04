@@ -29,7 +29,7 @@ JavaScript中的变量可以在两个维度进行分类，**①域， ②可变�
 ```
 上面这段代码哪些是全局变量哪些是局部变量呢？我们来分析一下。
 
-`![Snipaste_2022-04-04_11-57-16.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9a56792b78994e23a3126f9aeb63b80b~tplv-k3u1fbpfcp-watermark.image?)`
+![Snipaste_2022-04-04_11-57-16.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9a56792b78994e23a3126f9aeb63b80b~tplv-k3u1fbpfcp-watermark.image?)
 
 图中，红框的部分就是全局域，在全局域中，我们创建了`name`和`say`两个变量。再缩小范围，绿框的部分就是由函数`say`创建的局部域，在`say`中只创建了`name`这个变量，所以绿色下划线的`name`变量就是局部变量。而函数`say`中第三行又把`name`这个变量重新赋值，此时操作的是局部变量。
 
@@ -56,7 +56,7 @@ console.log('global', allowConst);
 同样的问题，哪些是局部变量，哪些又是全局变量？我们来分析下；
 
 
-`![Snipaste_2022-04-04_12-37-05.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8454c261cb094e43a81459c83839f2ca~tplv-k3u1fbpfcp-watermark.image?)`
+![Snipaste_2022-04-04_12-37-05.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8454c261cb094e43a81459c83839f2ca~tplv-k3u1fbpfcp-watermark.image?)
 
 代码执行的结果是什么？
 ```javascript
